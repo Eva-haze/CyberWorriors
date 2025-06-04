@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberWarriors | Регистрация</title>
+  <link rel="stylesheet" href="отдельно/styles.css">
+</head>
+<body>
+  <header>
+      <nav class="navbar">
+        <img src="отдельно/logo.png" alt="Логотип" class="logo">
+        <div class="nav-links">
+          <a href="index.html">Главная</a>
+          <a href="about.html">О нас</a>
+          <a href="register.html" class="active">Регистрация</a>
+        </div>
+      </nav>
+    </header>
+<div class="prikol">
+<section class="register">
+      <h2>Форма регистрации</h2>
+      <form id="regForm">
+        <label>Имя: <input type="text" id="name" required></label>
+        <label>Email: <input type="text" id="email" required></label>
+        <label>Пароль: <input type="password" id="password" required></label>
+        <label>Подтверждение пароля: <input type="password" id="confirmPassword" required></label>
+        <label>Тип услуги:
+          <select id="role" required>
+            <option value="">Выберите</option>
+            <option value="участник">Участник</option>
+            <option value="наблюдатель">Наблюдатель</option>
+          </select>
+        </label>
+        <button type="submit">Зарегистрироваться</button>
+        <p id="message"></p>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 CyberWarriors. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
